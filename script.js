@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=> {
     let myForm = document.getElementById('login_form');
+    let myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
     let hiddenInput1 = document.querySelector('.input1')
     let hiddenInput2 = document.querySelector('.input2')
     let hideInput1 = document.querySelector('.email_input1');
@@ -36,8 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             hideInput1.style.display = 'none';
         }
         if (userPassword.includes(inputPassword1) || userPassword.includes(inputPassword2)){
-            console.log(inputPassword1);
-            console.log(inputPassword2);
+            myModal.show();
 
         }else{
             let passwordError = document.createElement('p')
