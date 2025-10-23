@@ -1,0 +1,85 @@
+.login_page {
+    height: 100vh;
+}
+
+.red {
+    color: red;
+}
+.logincont{
+    width: 70%;
+    box-shadow: 8px 8px 40px #e1e1e1 ;
+}
+.logincont img{
+    width: 50%;
+}
+
+.login_box {
+    width: 50%;
+}
+
+.login_box h1{
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.login_form {
+    width: 100%;
+}
+
+.info_label {
+    font-weight: 600;
+}
+
+.input {
+    border: thin solid red;
+    justify-content: space-between;
+
+}
+.email_input1,.password_input1{
+    width: 100%;
+    outline: none;
+}
+.input input {
+    width: 90%;
+    outline: none;
+}
+.input i{
+    width: 7%;
+}
+
+.signinbtns {
+    width: 100%;
+}
+
+@media (min-width: 1000px){
+    .login_box {
+    padding-inline: 30px;
+    padding-block: 10px;
+}
+
+}
+@media (max-width: 1000px){
+    .login_box {
+    width: 100%;
+}
+    .login_box {
+    padding-inline: 30px;
+}
+
+}
+@media (max-width: 435px){
+    .logincont{
+    width: 100%;
+    box-shadow: 8px 8px 40px #e1e1e1 ;
+    height: 100%;
+}
+.logincont img{
+    width: 100%;
+}
+    .login_box {
+    padding-inline: 30px;
+}
+
+
+}
