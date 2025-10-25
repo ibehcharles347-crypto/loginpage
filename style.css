@@ -30,6 +30,9 @@
 .info_label {
     font-weight: 600;
 }
+.inputcont{
+    border: 2px solid;
+}
 
 .input {
     border: thin solid red;
@@ -37,19 +40,29 @@
 
 }
 .email_input1,.password_input1{
-    width: 100%;
+    width: 80%;
     outline: none;
+    border: none;
 }
 .input input {
     width: 90%;
     outline: none;
 }
-.input i{
-    width: 7%;
-}
-
 .signinbtns {
     width: 100%;
+}
+.input1, .input2{
+    color: red;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#inputcont1.error{
+    border: thin solid red !important;
+}
+#inputcont2.error{
+    border: thin solid red !important;
 }
 
 @media (min-width: 1000px){

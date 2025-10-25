@@ -19,32 +19,35 @@
 
 <body>
   <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Launch static backdrop modal
 </button> -->
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Successful!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="index.html">privacy policy.</a> <br><br>
-        <form action="">
-          <input type="checkbox" name="" id="">
-          <label for="">Please read the <a href="index.html">product's Terms and Conditions</a><span class="red">*</span></label>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <a href="index.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></a>
-        <button type="button" class="btn btn-dark">Check offers</button>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Successful!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Your personal data will be used to support your experience throughout this website, to manage access to your
+          account, and for other purposes described in our <a href="index.html">privacy policy.</a> <br><br>
+          <form action="">
+            <input type="checkbox" name="" id="">
+            <label for="">Please read the <a href="index.html">product's Terms and Conditions</a><span
+                class="red">*</span></label>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="index.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></a>
+          <button type="button" class="btn btn-dark">Check offers</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <section class="login_page bg-light d-flex justify-content-center align-items-center">
     <div class="logincont container d-flex flex-column flex-lg-row justify-content-between align-items-center">
       <img src="/images/login.jpg" alt="">
@@ -53,19 +56,17 @@
         <p class="fs-5">Please enter your details below.</p>
         <form action="" id="login_form" class="login_form">
           <label for="" class="fs-5 info_label">Email address</label><br>
-          <input type="email" id="email_input1" class="email_input p-2 email_input1 fs-5 rounded mb-2">
-          <div class="input1 input p-2 rounded pe-3 mb-2 fs-5">
-            <input type="email" id="email_input2" class="email_input border-0">
-            <i class="bi bi-exclamation-circle red"></i>
+          <div id="inputcont1" class="inputcont d-flex justify-content-between align-items-center rounded-2">
+            <input type="email" id="email_input1" class="email_input p-2 email_input1 fs-5 rounded mb-2">
+            <span class="input1"><i class="bi bi-exclamation-circle"></i></span>
           </div>
           <div class="emailerrormessage red mb-3">
 
           </div>
           <label for="" class="fs-5 info_label">Password</label>
-          <input type="password" id="password_input1" class="password_input p-2 password_input1 fs-5 rounded mb-2">
-          <div class="input2 input p-2 rounded pe-3 mb-2 fs-5">
-            <input type="password" id="password_input2" class="password_input border-0">
-            <i class="bi bi-exclamation-circle red"></i>
+          <div id="inputcont2" class="inputcont d-flex justify-content-between align-items-center rounded-2">
+            <input type="password" id="password_input1" class="password_input p-2 password_input1 fs-5 rounded mb-2">
+            <span class="input2"><i class="bi bi-exclamation-circle"></i></span>
           </div>
           <div class="passworderrormessage red mb-3">
 
@@ -78,7 +79,7 @@
             <a href="" class="text-primary">Forgot password</a>
           </div>
           <button type="submit" class="signinbtns btn btn-primary mb-3">Sign in</button>
-          <button type="submit" class="signinbtns btn btn-light border mb-3">Sign in with Google</button>
+          <a href="index.html" class="signinbtns btn btn-light border mb-3">Sign in with Google</a>
 
           <div class="signupbtn">
             <p class="d-flex gap-2">Don't have an account? <a href="#" class="text-primary">Sign up</a>
