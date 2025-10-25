@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
         let isMatch = users.some((user) => user.userEmail === inputEmail1 && user.userPassword === inputPassword1);
         if (isMatch) {
-            myModal.show();
+            // myModal.show();
+            window.location.href= "index2.html"
         } else {
             let emailError = document.createElement('p')
             emailError.textContent = 'Your email is incorrect or empty. Please check and try again.';
